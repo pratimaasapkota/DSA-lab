@@ -16,7 +16,12 @@ class Stack {
     cin >> temp;
     arr[top] = temp;
   }
-  
+  void pop() {
+    if (top == -1) {
+      cout << "there is nothing to pop" << endl;
+    }
+    top--;
+  }
   void display() {
     if (top == -1) {
       cout << "there is nothing to display" << endl;
