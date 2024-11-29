@@ -6,7 +6,16 @@ class Stack {
   int top;
   int arr[n];
   Stack() { top = -1; }
-  
+  void push() {
+    int temp;
+    if (top == n - 1) {
+      cout << "stack overflow";
+    }
+    top++;
+    cout << "enter a number to push" << endl;
+    cin >> temp;
+    arr[top] = temp;
+  }
   void pop() {
     if (top == -1) {
       cout << "there is nothing to pop" << endl;
