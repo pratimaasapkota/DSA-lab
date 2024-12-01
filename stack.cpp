@@ -36,7 +36,11 @@ int main() {
   while (key != 4) {
     cout << "1 for push, 2 for pop , 3 for display and 4 for quit" << endl;
     cin >> key;
-    
+    switch (key) {
+      case 1:
+        obj.push();
+        break;
+      case 2:
         obj.pop();
         break;
       case 3:
