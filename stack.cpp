@@ -29,7 +29,13 @@ class Stack {
     cout << arr[top] << endl;
   }
 };
-
+int main() {
+  int key;
+  Stack obj;
+  while (key != 4) {
+    cout << "1 for push, 2 for pop , 3 for display and 4 for quit" << endl;
+    cin >> key;
+    switch (key) {
       case 1:
 
         obj.push();
