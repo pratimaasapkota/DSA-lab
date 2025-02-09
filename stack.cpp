@@ -22,9 +22,7 @@ class Stack {
     }
     top--;
   }
-  void display() {
-    if (top == -1) {
-      cout << "there is nothing to display" << endl;
+  
     }
     cout << arr[top] << endl;
   }
